@@ -86,7 +86,7 @@ const Hobby = () => {
             </div>
             <Swiper scrollbar={{
                 hide: true,
-                hidden:true,
+                
             }}
                 slidesPerView={4.5}
                 modules={[Scrollbar]}
