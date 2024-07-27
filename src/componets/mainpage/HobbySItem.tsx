@@ -1,12 +1,6 @@
-"use client"
-import Link from 'next/link';
-import { title } from 'process';
-import React, { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Scrollbar } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/scrollbar';
 
+import React from 'react';
+import Link from 'next/link';
 
 interface Data {
     image: string;
@@ -15,6 +9,8 @@ interface Data {
     rating: number;
     price: number;
 }
+
+
 
 
 type DataHobby = Data[];
@@ -57,56 +53,62 @@ const dataHobby: DataHobby = [{
     rating: 4.1,
     price: 10000
 },
-
-
-
-
-
+{
+    "image": "/image/diveing.png",
+    "title": "جت اسکی",
+    duration: 40,
+    rating: 4.1,
+    price: 10000
+}, {
+    "image": "/image/diveing.png",
+    "title": "جت اسکی",
+    duration: 40,
+    rating: 4.1,
+    price: 10000
+}, {
+    "image": "/image/diveing.png",
+    "title": "جت اسکی",
+    duration: 40,
+    rating: 4.1,
+    price: 10000
+}, {
+    "image": "/image/diveing.png",
+    "title": "جت اسکی",
+    duration: 40,
+    rating: 4.1,
+    price: 10000
+}, {
+    "image": "/image/diveing.png",
+    "title": "جت اسکی",
+    duration: 40,
+    rating: 4.1,
+    price: 10000
+},
+{
+    "image": "/image/diveing.png",
+    "title": "جت اسکی",
+    duration: 40,
+    rating: 4.1,
+    price: 10000
+},
 ]
-const Hobby = () => {
-
+const HobbySItem = () => {
     return (
-
         <>
-
-            <div className='w-full flex  justify-between items-center pt-[110px]'>
-                <div className=''>
-                    <h1 className='text-[24px]'>
-                        تفریحات پرطرفدار
-                        <img className='' src='/image/line 14.png' />
-                    </h1>
-                </div>
-                <div className=' flex w-[140px] justify-end'>
-                    <Link href="#" className='text[15px]  '>
-                        مشاهده بیشتر
-                    </Link>
-                    <img className='h-[24px]' src='/image/arrow-left.png' />
-
-                </div>
-            </div>
-            <Swiper scrollbar={{
-                hide: true,
-                
-            }}
-                slidesPerView={4.5}
-                modules={[Scrollbar]}
-                className="mySwiper"
-            >
-                {dataHobby.map((item) => (
-                    <div className='pt-[37px] flex gap-6 w-[1300px] h-[377px]'>
-
-                        return(
-                        <SwiperSlide>
-                            <div className='bg-[#ffffff] overflow-hidden w-[254px] h-[331px] justify-center flex rounded-2xl '>
-                                <Link href='#' className='   '>
-                                    <img src={item.image} className=' pt-[8px] ' />
+            <div className='w-[1300px] h-[1090px]  justify-center items-center '>
+                <div className='pt-[37px] gap-6 flex flex-row flex-wrap '>
+                    {dataHobby.map((item) => (
+                        <div className='w-[23%] h-[331px]'>
+                            <div className='bg-[#ffffff]  justify-center flex rounded-2xl '>
+                                <Link href='#' className=''>
+                                    <img src={item.image} className=' pt-[8px] w-[238px] h-[190px] ' />
                                     <div className='flex justify-between w-[238px] h-[31px] gap-2 pt-2'>
                                         <h1>
                                             {item.title}
                                         </h1>
-                                        <div className='gap-2 bg-light'>
-                                            <img src='/image/star.png' className='w-[10px] flex h-[24px] pt-1' />
+                                        <div className='gap-2 flex bg-light'>
                                             <span>{item.rating}</span>
+                                            <img src='/image/star.png' className='w-[10px]  h-[24px] pt-1' />
                                         </div>
                                     </div>
                                     <div className='flex  flex-row pt-2'>
@@ -122,15 +124,15 @@ const Hobby = () => {
                                 </Link>
 
                             </div>
-                        </SwiperSlide>
-                        )
-                    </div >
 
-                ))}
-            </Swiper>
+                        </div>
+                    ))}
+                </div >
+            </div>
 
         </>
     );
 }
 
-export default Hobby;
+
+export default HobbySItem;

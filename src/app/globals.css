@@ -17,3 +17,9 @@
 * {
   font-family: "Yekan";
 }
+@layer{
+  @font-face {
+    font-family: Yekan;
+    src: url(/my-app/public/font/IRAN\ Yekan\ Pro/);
+  }
+}

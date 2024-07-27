@@ -37,7 +37,7 @@ const Header = () => {
                             </svg>
                         </div>
                         <input type="search" id="default-search" className="mt-[64px] w-[662px] h-[64px] block p-4 ps-10 text-sm text-gray-900  rounded-lg bg-[#fffff]" placeholder="دنبال چی میگردی؟" required />
-                        <button type="submit" className="text-white w-[118px] h-[44px] absolute end-[-12.375rem] bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">جستجو کنید</button>
+                        <button type="submit" className="text-white w-[118px] h-[44px] absolute end-[-12.375rem] bottom-2.5 bg-[#0051A1]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:[#0051A1]">جستجو کنید</button>
                     </div>
                 </form>
             </div>
