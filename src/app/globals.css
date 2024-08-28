@@ -6,7 +6,7 @@
   direction: rtl;
   background-color: #f9f8f6;
 }
-@font-face {
+/* @font-face {
   font-family: "Yekan";
   font-style: normal;
   font-weight: 200;
@@ -22,4 +22,49 @@
     font-family: Yekan;
     src: url(/my-app/public/font/IRAN\ Yekan\ Pro/);
   }
-}
+} */
+ /* @layer base{
+  body{
+    font-family: "Yekan";
+  }
+ }
+
+ @font-face {
+  font-family: ;
+  font-weight: ;
+  src: url();
+ } */
+
+ @font-face {
+  font-family: f-m;
+  src: url(/my-app/public/font/IRANYekanPro/Source1V3.0Older/Farsi_numerals/IRANYekanBoldFaNum.ttf);
+  font-weight: bold;
+  font-style: Bold;
+ }
+ @font-face {
+  font-family: IRANYekan;
+  src: url(/my-app/public/font/IRANYekanPro/Source1V3.0Older/Farsi_numerals/IRANYekanLightFaNum.ttf);
+  font-weight: lighter;
+  font-style: light;
+ }
+
+ @font-face {
+  font-family: IRANYekan;
+  src: url(/my-app/public/font/IRANYekanPro/Source1V3.0Older/Farsi_numerals/IRANYekanMediumFaNum.ttf);
+  font-weight: medium;
+  font-style: medium;
+ }
+
+ @font-face {
+  font-family: IRANYekan;
+  src: url(/my-app/public/font/IRANYekanPro/Source1V3.0Older/Farsi_numerals/IRANYekanBoldFaNum.ttf);
+  font-weight: bold;
+  font-style: Bold;
+ }
+
+ @font-face {
+  font-family: IRANYekan;
+  src: url(/my-app/public/font/IRANYekanPro/Source1V3.0Older/Farsi_numerals/IRANYekanMediumFaNum.ttf);
+  font-weight: medium;
+  font-style: medium;
+ }

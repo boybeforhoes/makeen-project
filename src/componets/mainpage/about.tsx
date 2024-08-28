@@ -5,7 +5,8 @@ const About = () => {
         <div>
             <div className='pt-[320px] w-[100%]'>
                 <div className=''>
-                    <img src='/image/border-line.png'/>
+                    {/* <img src='/image/border-line.png'/>
+                     */}
                 </div>
             </div>
         </div>

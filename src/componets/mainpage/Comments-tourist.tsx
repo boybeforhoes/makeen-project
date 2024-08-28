@@ -59,7 +59,7 @@ const commentsTourist: CommentsTourist = [
 const CommentsTourist = () => {
     return (
         <div>
-            <div>
+            <div className=''>
                 <div className='w-full flex pr-[70px] pl-[70px]  justify-between items-center pt-[110px]'>
                     <div className=''>
                         <h1 className='text-[24px]'>
@@ -76,19 +76,21 @@ const CommentsTourist = () => {
                     </div>
                 </div>
             </div>
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper flex flex-row w-[1380px] h-[256px]"
-                slidesPerView={3}>
+            <div className='w-[100%] h-fit bg-red-900'>
+                <Swiper navigation={true} modules={[Navigation]} className="mySwiper flex flex-row w-[1380px] h-[256px]"
+                    slidesPerView={3}>
 
-                {commentsTourist.map((item) => (
-                    <SwiperSlide>
-                        <div className='pt-[56px]  '>
-                            <div className='bg-red-700 w-[420px] h-[2rem] rounded-2xl flex  '>
+                    {commentsTourist.map((item) => (
+                        <SwiperSlide>
+                            <div className='pt-[56px]  '>
+                                <div className='bg-red-700 w-[420px] h-[2rem] rounded-2xl flex  '>
 
+                                </div>
                             </div>
-                        </div>
-                    </SwiperSlide>
-                ))},
-            </Swiper>
+                        </SwiperSlide>
+                    ))},
+                </Swiper>
+            </div>
         </div>
     );
 }
